@@ -4,11 +4,11 @@ import { getFirestore } from "firebase/firestore";
 import { app } from "./firebaseConfig"; // Importa la instancia de Firebase desde firebaseConfig
 // import RRHHMensajes from "./components/RRHHMensajes";
 
-import DepositoTareas from "./components/DepositoTareas";
-import Devoluciones from "./components/Devoluciones";
+import DepositoTareas from "./Components/DepositoTareas";
+import Devoluciones from "./Components/Devoluciones";
 // 
-import Home from "./components/Home";
-import TareasACompletar from "./components/TareasACompletar";
+import Home from "./Components/Home";
+import TareasACompletar from "./Components/TareasACompletar";
 
 // Inicializa Firestore con la app de Firebase
 const db = getFirestore(app);
