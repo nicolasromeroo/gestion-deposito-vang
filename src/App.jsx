@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { getFirestore } from "firebase/firestore";
 import { app } from "./firebaseConfig"; // Importa la instancia de Firebase desde firebaseConfig
-import RRHHMensajes from "./components/RRHHMensajes";
+// import RRHHMensajes from "./components/RRHHMensajes";
+
 import DepositoTareas from "./components/DepositoTareas";
 import Devoluciones from "./components/Devoluciones";
 // 
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tareasacompletar" element={<TareasACompletar />} />
-        <Route path="/rrhh/mensajes" element={<RRHHMensajes />} />
+        {/* <Route path="/rrhh/mensajes" element={<RRHHMensajes />} /> */}
         <Route path="/deposito/tareas" element={<DepositoTareas db={db} />} />
         <Route path="/devoluciones" element={<Devoluciones db={db} />} />
       </Routes>
